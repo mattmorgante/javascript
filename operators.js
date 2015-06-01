@@ -12,3 +12,10 @@
 var d = "7"; 
 typeof d; 
 --> "string"
+
+var a = 7; 
+
+a === d; 
+// should return false 
+a == d; 
+// should return true 
