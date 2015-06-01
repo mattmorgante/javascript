@@ -1,9 +1,6 @@
 body { 
-  background-color: yellow; 
-  color: red;
-  border:1px solid blue;
+  color:#333; 
+  font-family: sans-serif;
+  padding: 50px;
 }
 
-.style1 { 
-  color: blue;
-}

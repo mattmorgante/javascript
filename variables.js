@@ -8,5 +8,5 @@ var y = "javascript is awesome"
 z + y; 
 
 // types: numbers, strings, and booleans 
-
+// boolean 
 a === 12 
