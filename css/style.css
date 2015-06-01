@@ -1,0 +1,9 @@
+body { 
+  background-color: yellow; 
+  color: red;
+  border:1px solid blue;
+}
+
+.style1 { 
+  color: blue;
+}
