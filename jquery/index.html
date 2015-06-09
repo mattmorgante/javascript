@@ -6,12 +6,21 @@
   </head> 
 
   <body>
-    <p>Boilerplate for Instructional videos</p> 
+    <div id="main"> 
+      <p>Boilerplate for Instructional videos</p> 
+    </div>
+
     <script type="text/javascript"> 
-      $(document).ready(function(){
-        $('body').addClass('awesome-body');
+    // $ is a shortform for jQuery 
+    // pass a parameter(document) 
+    // then run this function in the following line
+      jQuery(document).ready(function($){
+        $('body').addClass('awesome-body2');
+        $('div p').css('color', 'red');
       })
-    </script> 
+    </script>
+
+     <!-- jQuery is called the find something, do something library -->
   </body>
 
 </html>
