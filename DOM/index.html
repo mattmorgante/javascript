@@ -12,15 +12,23 @@
       </header> 
 
       <section class="mySection">
-        <p>Lorem Ipsum Hipster PBRs</p> 
+        <p>Lorem Ipsum Hipster 
+          <span>PBRs
+            <span>I am the child of span, gchild of P</span>
+          </span>
+        </p> 
+
+        <p>Second paragraph</p>
+
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+
       </section> 
 
-      <aside id="main">
-        <ul class="list"> 
-          <li><a href="http://mattmorgante.com">First Link</a></li> 
-          <li><a href="http://grantland.com">Second Link</a></li> 
-        </ul> 
-      </aside> 
 
       <footer>
         Copyright do whatever the fuck you want 
@@ -29,7 +37,28 @@
 
     <script>
       jQuery(document).ready(function($){
-        $('#main, footer, .mySection').append(' HelloWORLD');
+        // parent > child
+        // ancestor descendant 
+
+        // $('span > span').css('text-decoration', 'underline');
+        // $('p span').css('color', 'blue');
+
+        // first child selector
+        // last child selector
+
+        $('ul > li:first-child').append(' first child');
+        $('ul > li:last-child').append(' last child');
+
+        // :nth-child(n) Selector
+        // :nth-last-child(n) Selector 
+
+        $('ul >li:nth-child(2)').append('i should be the second child');
+        $('ul >li:nth-last-child(2)').append('i should be the second to last child');
+        $('.mySection > p:nth-child(2)').css('color', 'yellow');
+
+        // :contains() Selector contains content
+        // :has() Selector: has elements 
+      
 
       });
     </script> 
